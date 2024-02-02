@@ -1,0 +1,321 @@
+{
+  "modName": "UnequipQuiverSE",
+  "displayName": "$UQ_DisplayName",
+  "minMcmVersion": 9,
+  "cursorFillMode": "topToBottom",
+  "pages": [
+    {
+      "pageDisplayName": "$UQ_MainPage",
+      "cursorFillMode": "topToBottom",
+      "content": [
+        {
+          "text": "$UQ_MainHeader",
+          "type": "header"
+        },
+        {
+          "id": "bEnablePC:Main",
+          "text": "$UQ_EnablePlayer",
+          "type": "toggle",
+          "help": "$UQ_EnablePlayerInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bEnableNPC:Main",
+          "text": "$UQ_EnableNPCs",
+          "type": "toggle",
+          "help": "$UQ_EnableNPCsInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        }
+      ]
+    },
+    {
+      "pageDisplayName": "$UQ_UnequippingEventsPage",
+      "cursorFillMode": "topToBottom",
+      "content": [
+        {
+          "text": "$UQ_UnequippingEventsHeader",
+          "type": "header"
+        },
+        {
+          "id": "bSpell:Main",
+          "text": "$UQ_EnableSpell",
+          "type": "toggle",
+          "help": "$UQ_EnableSpellInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bWeapon:Main",
+          "text": "$UQ_EnableWeapon",
+          "type": "toggle",
+          "help": "$UQ_EnableWeaponInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bShield:Main",
+          "text": "$UQ_EnableShield",
+          "type": "toggle",
+          "help": "$UQ_EnableShieldInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bBow:Main",
+          "text": "$UQ_EnableBow",
+          "type": "toggle",
+          "help": "$UQ_EnableBowInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bCrossbow:Main",
+          "text": "$UQ_EnableCrossBow",
+          "type": "toggle",
+          "help": "$UQ_EnableCrossBowInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        }
+      ]
+    },
+    {
+      "pageDisplayName": "$UQ_AdvancedPage",
+      "cursorFillMode": "topToBottom",
+      "content": [
+        {
+          "text": "$UQ_AdvancedHeader",
+          "type": "header"
+        },
+        {
+          "id": "bCheckWeaponByKeywords:Main",
+          "text": "$UQ_CheckWeaponByKeywords",
+          "type": "toggle",
+          "help": "$UQ_CheckWeaponByKeywordsInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "iReEquipType:Main",
+          "text": "$UQ_ReEquipType",
+          "type": "slider",
+          "help": "$UQ_ReEquipTypeInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "min": 0,
+            "max": 2,
+            "step": 1,
+            "formatString": "{0}",
+            "sourceType": "ModSettingInt"
+          }
+        },
+        {
+          "id": "bEquipStronger:Main",
+          "text": "$UQ_EquipStronger",
+          "type": "toggle",
+          "help": "$UQ_EquipStrongerInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bEquipLargerAmount:Main",
+          "text": "$UQ_EquipLargerAmount",
+          "type": "toggle",
+          "help": "$UQ_EquipLargerAmountInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bSavefile:Main",
+          "text": "$UQ_Savefile",
+          "type": "toggle",
+          "help": "$UQ_SavefileInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bMultiBow:Main",
+          "text": "$UQ_EnableMultiBow",
+          "type": "toggle",
+          "help": "$UQ_EnableMultiBowInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bBlackListAmmo:Main",
+          "text": "$UQ_EnableBlackListAmmo",
+          "type": "toggle",
+          "help": "$UQ_EnableBlackListAmmoInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bBlackListRace:Main",
+          "text": "$UQ_EnableBlackListRace",
+          "type": "toggle",
+          "help": "$UQ_EnableBlackListRaceInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bBlackListCharacter:Main",
+          "text": "$UQ_EnableBlackListCharacter",
+          "type": "toggle",
+          "help": "$UQ_EnableBlackListCharacterInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bExtraData:Main",
+          "text": "$UQ_EnableExtradata",
+          "type": "toggle",
+          "help": "$UQ_EnableExtradataInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bFavorites:Main",
+          "text": "$UQ_EnableFavorites",
+          "type": "toggle",
+          "help": "$UQ_EnableFavoritesInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        }
+      ]
+    },
+    {
+      "pageDisplayName": "$UQ_HideQuiverBoltPage",
+      "cursorFillMode": "topToBottom",
+      "content": [
+        {
+          "text": "$UQ_HideQuiverBoltPCHeader",
+          "type": "header"
+        },
+        {
+          "id": "bHideQuiverOnSheathe:Main",
+          "text": "$UQ_HideQuiverOnSheathe",
+          "type": "toggle",
+          "help": "$UQ_HideQuiverOnSheatheInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bHideQuiverOnDraw:Main",
+          "text": "$UQ_HideQuiverOnDraw",
+          "type": "toggle",
+          "help": "$UQ_HideQuiverOnDrawInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bHideBoltOnSheathe:Main",
+          "text": "$UQ_HideBoltOnSheathe",
+          "type": "toggle",
+          "help": "$UQ_HideBoltOnSheatheInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bHideBoltOnDraw:Main",
+          "text": "$UQ_HideBoltOnDraw",
+          "type": "toggle",
+          "help": "$UQ_HideBoltOnDrawInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "text": "$UQ_HideQuiverBoltNPCHeader",
+          "type": "header"
+        },
+        {
+          "id": "bHideQuiverOnSheatheNPC:Main",
+          "text": "$UQ_HideQuiverOnSheatheNPC",
+          "type": "toggle",
+          "help": "$UQ_HideQuiverOnSheatheNPCInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bHideQuiverOnDrawNPC:Main",
+          "text": "$UQ_HideQuiverOnDrawNPC",
+          "type": "toggle",
+          "help": "$UQ_HideQuiverOnDrawNPCInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bHideBoltOnSheatheNPC:Main",
+          "text": "$UQ_HideBoltOnSheatheNPC",
+          "type": "toggle",
+          "help": "$UQ_HideBoltOnSheatheNPCInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bHideBoltOnDrawNPC:Main",
+          "text": "$UQ_HideBoltOnDrawNPC",
+          "type": "toggle",
+          "help": "$UQ_HideBoltOnDrawNPCInfo",
+          "groupControl": 1,
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        }
+      ]
+    }
+  ],
+  "customContent": {
+    "source": "UnequipQuiverSE/logo.dds",
+    "x": 0,
+    "y": 0
+  }
+}
